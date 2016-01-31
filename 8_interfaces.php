@@ -6,12 +6,20 @@ interface Chargeable {
 
 }
 
-class ShopProduct implements Chargeable {
+interface interfaceDos {
+	public function getFirst();
+}
+
+class ShopProduct implements Chargeable, interfaceDos {
 
 	public $price = 0;
 
 	public function getPrice() {
 		return 'Value 1';
+	}
+
+	public function getFirst() {
+		
 	}
 
 }
